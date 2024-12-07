@@ -1,0 +1,86 @@
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #bfdc87;
+            color: white;
+        }
+
+        /* Barra superior horizontal */
+        .barra {
+            background-color: #ffffff; 
+            height: 40px; 
+            width: 100%; 
+            position: fixed; 
+            top: 0;
+            z-index: 1000;
+        }
+
+        .barra-vertical {
+            background-color: #ffffff;
+            line-height: 40px; 
+            height: 100%; 
+            width: 40px;
+            position: fixed; 
+            flex-direction: column;
+            line-height: normal;
+        }
+
+
+        /* Conteúdo principal */
+        .conteudo {
+            padding: 60px 20px;
+            margin-left: 45px; 
+        }
+
+        .texto p {
+            text-align: left;
+            margin: 50px 0;
+            font-size: 5.2em;
+            font-family: "PT Serif Caption", serif;
+            font-style: italic, bold;
+        }
+
+
+        /* Projetos */
+        .projetos-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;  
+            padding-left: 50px;
+            cursor: pointer;
+            padding-bottom: 25;
+            margin-left: 150;
+            
+        }
+
+
+        .projeto {
+            background-color: #ffffff;
+            color: black;
+            padding: 10px;
+            border-radius: 15px;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a transição */
+        }
+        
+        /* Faz o projeto subir ao passar o mouse */
+        .projeto:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra */
+        }
+
+
+        .projeto {
+            background-color: #ffffff;
+            color: black;
+            padding: 10px;
+            border-radius: 15px;
+            width: 300px;
+          
+        }
+
+        .projeto img {
+            width: 100%;
+            height: auto;
+        }
+    
